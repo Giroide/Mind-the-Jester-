@@ -1,0 +1,155 @@
+body {
+  background-color: #510535;
+  background-image: url(./assets/bg.png);
+  color: rgb(0, 0, 0);
+  animation: moveBackground 30s linear infinite;
+  
+}
+
+#submit {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h2 {
+  color: rgb(255, 0, 0);
+}
+
+.intro {
+  height: 25vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: rgb(250, 250, 250);
+  -webkit-text-stroke-color: red;
+  font-family: "Tiny5 Duo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.button1 {
+  background-color: rgb(24, 1, 49);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transform: scale(1.1);
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.cardName {
+  z-index: 100;
+  color: white;
+  margin: none;
+  position: absolute;
+  top: 8px;
+  left: 10px; 
+  right: 10px;
+  text-align: center;
+
+  font-family: "Tiny5 Duo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cardIcon {
+  width: 31px;
+  height: 47px;
+  background-position: 0px 0px;
+  background-image: url(./assets/BJ_spritesheet.png);
+  display: flex;
+  align-items: center;
+  transform: scale(4);
+  image-rendering: pixelated;
+  position: relative;
+  transition: background-position 0.3s ease, background-color 0.3s ease;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  
+  background-image: url('assets/bg.png');
+  background-repeat: repeat;
+  background-color: #120520; 
+  background-image: radial-gradient(#2d0c4a 15%, transparent 16%),
+                    radial-gradient(#2d0c4a 15%, transparent 16%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  
+  border: 4px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+
+  width: 150px;   
+  height: 250px; 
+  margin: 20px auto;
+}
+
+#points {
+  color:white;
+}
+
+.points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#storedPoints {
+  color: white
+}
+
+.quest1 {
+  color: white;
+}
+
+
+.pointStats {
+  position: fixed; 
+  top: 0px;       
+  left: 0px;     
+  z-index: 100;
+}
+
+#pointStreak {
+  color: white;
+}
+
+.Quests {
+  position: fixed; 
+  top: 20px;       
+  right: 20px;     
+  z-index: 100;
+
+  background-image: url('assets/bg.png');
+  background-repeat: repeat;
+  background-color: #120520; 
+  background-image: radial-gradient(#2d0c4a 15%, transparent 16%),
+                    radial-gradient(#2d0c4a 15%, transparent 16%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  
+  border: 4px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+@keyframes moveBackground {
+        0% {
+          background-position: 0px 0px;
+        }
+        100% {
+          background-position: -1000px 1000px;
+        }
+      }

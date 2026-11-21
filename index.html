@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title> Mind the Jester! </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="intro">
+        <h1 class="name">Mind the Jester!</h1>
+        <button class="button1" id="ask" onclick="choice(getDeck())">Try your luck</button>
+        <button class="button1" id="storePoints" onclick="store()">Cash-out!</button>
+        <div class="points">
+          <h2>Points:</h2>
+          <h2 id="points"></h2>
+        </div>
+      </div>
+      
+     
+      <div class="cardContainer">
+        <span class="cardName" id="cardName">Ace of spades</span> 
+        <div class="cardIcon"></div>
+      </div>
+
+      
+    
+    <div class="pointStats">
+      <div class="pointStreak">
+        <span>Top streak: </span>
+        <span id="pointStreak" >No streaks yet! Make it to the moon!</span>
+      </div>
+      <div class="storedPoints">
+         <span>Stored points: </span>
+         <span class="storedPoints" id="storedPoints">0</span>
+      </div>
+    </div>
+
+    <div class="Quests">
+      <h2>Quests: </h2>
+      <h3 class="quest1" id="quest1">[Easy] Reach 200 points</h3>
+      <h3 class="quest1" id="quest2">[Medium] Pull 100 cards</h3>
+      <h3 class="quest1" id="quest3">[Hard] Reach 700 points</h3>
+    </div>
+  </body>
+  <script src="./src/datos.js"></script> 
+  <!--EL FALLO ERA EL "." EN LA RUTA!!!!! || El "." indica que la ruta es relativa al html y no la carpeta raíz del programa-->
+</html>
